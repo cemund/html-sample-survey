@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bahay Pare Barangay Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="title">Barangay Improvement Survey</h1>
+    <p id="description">Enhancing Community Life in Bahay Pare, Philippines</p>
+    <main>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label"
+            >Enter your name:
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label for="email" id="email-label"
+            >Enter your email:
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+          <label for="gender"
+            >Gender:<select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select></label
+          >
+
+          <label for="number" id="number-label"
+            >Enter your age:
+            <input
+              type="number"
+              id="number"
+              min="13"
+              max="120"
+              placeholder="age"
+              required
+            />
+          </label>
+          <label for="occupation">Occupation:</label>
+          <input type="text" id="occupation" name="occupation" />
+        </fieldset>
+        <fieldset>
+          <legend>Residency Details:</legend>
+          <label for="residing" id="number-label"
+            >How long have you been residing in Bahay Pare?
+            <input
+              type="number"
+              id="residing"
+              min="13"
+              max="120"
+              placeholder="residing"
+              required
+            />
+          </label>
+          Do you own or rent your residence?
+          <label for="own" id="number-label"
+            ><input
+              type="radio"
+              id="own"
+              checked
+              name="residence"
+              value="own"
+            />Own
+          </label>
+          <label for="rent" id="number-label"
+            ><input type="radio" id="rent" name="residence" value="rent" />Rent
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Infrastructure and Public Services</legend>
+
+          <label for="road-condition"
+            >How would you rate the condition of the roads in Bahay Pare?</label
+          >
+          <select id="road-condition" name="road-condition">
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+          </select>
+
+          <label for="road-condition-comments"
+            >Are there any specific areas with poor road conditions that you
+            would like to highlight?</label
+          >
+          <textarea
+            id="road-condition-comments"
+            name="road-condition-comments"
+          ></textarea>
+
+          <label for="public-transportation"
+            >How satisfied are you with the availability of public
+            transportation in the barangay?</label
+          >
+          <select id="public-transportation" name="public-transportation">
+            <option value="very-satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="dissatisfied">Dissatisfied</option>
+            <option value="very-dissatisfied">Very Dissatisfied</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Public Safety:</legend>
+          <label for="public-safety">How safe do you feel in Bahay Pare?</label>
+          <select id="public-safety" name="public-safety">
+            <option value="very-safe">Very Safe</option>
+            <option value="safe">Safe</option>
+            <option value="neutral">Neutral</option>
+            <option value="dissatisfied">Dissatisfied</option>
+            <option value="very-dissatisfied">Very Dissatisfied</option>
+          </select>
+          <label for="safety-report"
+            >Are there specific safety concerns you would like to report?</label
+          >
+          <textarea id="safety-report" name="safety-report"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Waste Management:</legend>
+          <label for="waste-management"
+            >How satisfied are you with the waste management services in the
+            barangay?</label
+          >
+          <select id="waste-management" name="waste-management">
+            <option value="very-satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="dissatisfied">Dissatisfied</option>
+            <option value="very-dissatisfied">Very Dissatisfied</option>
+          </select>
+          <label for="waste-suggestion"
+            >Do you have any suggestions for improving waste management?</label
+          >
+          <textarea id="waste-suggestion" name="waste-suggestion"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Health Services:</legend>
+          <label for="health-services"
+            >How satisfied are you with the accessibility of health services in
+            Bahay Pare?</label
+          >
+          <select id="health-services" name="health-services">
+            <option value="very-satisfied">Very Satisfied</option>
+            <option value="satisfied">Satisfied</option>
+            <option value="neutral">Neutral</option>
+            <option value="dissatisfied">Dissatisfied</option>
+            <option value="very-dissatisfied">Very Dissatisfied</option>
+          </select>
+          <label for="health-suggestion"
+            >Are there specific health services that need improvement?</label
+          >
+          <textarea id="health-suggestion" name="health-suggestion"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Community Activities and Events:</legend>
+          <label for="dropdown"
+            >How engaged do you feel in community activities and events?</label
+          >
+          <select id="dropdown" name="dropdown">
+            <option value="very-engaged">Very Engaged</option>
+            <option value="engaged">Engaged</option>
+            <option value="neutral">Neutral</option>
+            <option value="disengaged">Disengaged</option>
+            <option value="very-disengaged">Very Disengaged</option>
+          </select>
+          <label for="events-suggestion"
+            >What types of community events would you like to see more
+            of?</label
+          >
+          <textarea id="events-suggestion" name="events-suggestion"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Communication Channels</legend>
+
+          <label
+            >How do you prefer to receive information from the barangay (e.g.,
+            announcements, updates)?</label
+          >
+
+          <input
+            type="checkbox"
+            value="social-media"
+            name="communication-preference"
+            id="social-media"
+          /><label for="social-media"> Social Media</label>
+          <input
+            type="checkbox"
+            value="text-messages"
+            name="communication-preference"
+            id="text-messages"
+          /><label for="text-messages"> Text Messages</label>
+          <input
+            type="checkbox"
+            value="barangay-meetings"
+            name="communication-preference"
+            id="barangay-meetings"
+          />
+          <label for="barangay-meetings"> Barangay Meetings</label>
+
+          <label for="communication-suggestions"
+            >Do you have any suggestions for improving communication
+            channels?</label
+          >
+          <textarea
+            id="communication-suggestions"
+            name="communication-suggestions"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Suggestions for Improvement</legend>
+
+          <label for="specific-improvements"
+            >What specific improvements would you suggest for the overall
+            betterment of Bahay Pare?</label
+          >
+          <textarea
+            id="specific-improvements"
+            name="specific-improvements"
+          ></textarea>
+
+          <label for="specific-projects"
+            >Are there any specific projects or initiatives you would like to
+            propose?</label
+          >
+          <textarea id="specific-projects" name="specific-projects"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Comments</legend>
+
+          <label for="additional-comments"
+            >Please provide any additional comments or feedback you have about
+            living in Bahay Pare.</label
+          >
+          <textarea
+            id="additional-comments"
+            name="additional-comments"
+          ></textarea>
+        </fieldset>
+        <input type="submit" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>
